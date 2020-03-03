@@ -1,0 +1,17 @@
+canvas{
+    background-color: #eee;
+    box-shadow:1px 1px 10px 5px #ddd;
+    margin:2em auto;
+}
+.cell{
+    width:20px;
+    height: 20px;
+    padding:1px;
+    border-radius: 50%;
+}
+.alive{
+    background-color: blue;
+}
+.dead{
+    background-color: transparent;
+}
