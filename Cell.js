@@ -15,6 +15,9 @@ export default class Cell{
     is_alive(){
         return this.status=='Alive'?true:false;
     }
+    get_status(){
+        return this.status;
+    }
     render_characeter(){
         if(this.is_alive()){
             this.ctx.fillStyle="blue";
