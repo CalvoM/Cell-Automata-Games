@@ -24,7 +24,7 @@ export default class Grid{
             for(let row=0;row<this.canvas.height;row+=this.rows){
                 let cell = new Cell(this.canvas,row,column)
                 let randInt = Math.floor(Math.random()*1000)
-                if(randInt<500){
+                if(randInt<400){
                     cell.make_alive();
                 }
                 cell.render_characeter();
@@ -115,9 +115,9 @@ export default class Grid{
         //Get the edges of the cols and rows
         let rowEdge = this.canvas.height/this.rows;
         let colEdge = this.canvas.width/this.cols;
-        let differentCells,sameCells=0;
-        let outer_min,inner_min=-1;
-        let outer_max,inner_max=1;
+        let differentCells=0,sameCells=0;
+        let outer_min=-1,inner_min=-1;
+        let outer_max=1,inner_max=1;
         if(cellIndex<=rowEdge){
             ///////
             inner_min=0

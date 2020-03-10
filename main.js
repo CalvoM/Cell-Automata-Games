@@ -7,7 +7,7 @@ function GOL(){
     let canvas = document.querySelector('canvas')
     if(canvas.getContext){
         let grid = new Grid(canvas,COLUMNS,ROWS);
-        grid.beginrandomGrid()
+        grid.gliderPattern()
        setInterval(function(){
            grid.updateGrid();
        },100)
